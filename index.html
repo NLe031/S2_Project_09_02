@@ -22,11 +22,16 @@
     <link href="sb_styles.css" rel="stylesheet" />
     <link rel="stylesheet" href="sb_forms.css">
     <link rel="stylesheet" href="sb_validate.css">
+    <script src="sb_script.js"></script>
 </head>
 
 <body>
     <header>
         <img src="sb_logo.png" alt="The Spice Bowl" />
+        <form action="https://www.example.com/sb/login">
+            <input type="text" name="Username" id="userBox" placeholder="Username">
+            <input type="text" name="Password" id="pwdBox" placeholder="password">
+        </form>
 
         <nav> <a id="navicon" href="#"><img src="sb_navicon.png" alt="" /></a>
             <ul>
@@ -41,7 +46,34 @@
 
     <section>
         <h1>Payment Form</h1>
+        <form action="https://www.example.com/sb/payment" method="POST" id="payment">
+            <label for="FirstBox">First Name</label>
+            <input name="fName" id="FirstBox" type="text" required />
 
+            <label for="lastBox">Last Name</label>
+            <input name="lName" id="lastBox" type="text" required />
+
+            <label for="streetBox">Street Address</label>
+            <input name="street" id="streetBox" type="text" required />
+
+            <label for="streetBox2">Street Address (2)</label>
+            <input name="street2" id="streetBox2" type="text" />
+
+            <label for="cityBox">City</label>
+            <input name="city" id="cityBox" type="text" required />
+
+            <label for="stateBox">State</label>
+            <input type="email" name="state" id="stateBox" required />
+
+            <label for="zipBox">ZIP/Postal Code</label>
+            <input type="tel" name="zip" id="zipBox" />
+
+            <label for="countryBox">Country</label>
+            <input type="text" name="country" id="countryBox" required>
+
+            <label for="phoneBox">Phone</label>
+            <input type="text" name="phone" id="phoneBox" required pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]\d{4}$">
+        </form>
         <aside>
             <h1>Menu Ideas</h1>
             <h2>Salt-Roasted Pecans</h2>
