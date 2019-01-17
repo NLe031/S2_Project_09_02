@@ -13,3 +13,6 @@
 
 
 /* Validation Styles */
+input:not([type='radio']) {
+    background-color: rgb(255, 218, 165)
+}
