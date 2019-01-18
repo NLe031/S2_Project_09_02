@@ -138,29 +138,29 @@
                     <label class="cardLabel" for="cCard">
                         <input type="radio" name="amex" id="cCard" value="amex" required>
 
-                        <img src="sb_amex.png" alt="">
+                        <img src="sb_amex.png" alt="amex">
                     </label>
 
                     <label class="cardLabel" for="cCard">
                         <input type="radio" name="discover" id="cCard" value="discover" required>
 
-                        <img src="sb_discover.png" alt="">
+                        <img src="sb_discover.png" alt="discover">
                     </label>
 
                     <label class="cardLabel" for="cCard">
                         <input type="radio" name="master" id="cCard" value="master" required>
 
-                        <img src="sb_master.png" alt="">
+                        <img src="sb_master.png" alt="master">
                     </label>
 
                     <label class="cardLabel" for="cCard">
                         <input type="radio" name="visa" id="cCard" value="visa" required>
 
-                        <img src="sb_visa.png" alt="">
+                        <img src="sb_visa.png" alt="visa">
                     </label>
                 </fieldset>
                 <label for="cardBox">Credit Card Number</label>
-                <input type="number" name="CardNumber" id="cardBox" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
+                <input type="text" name="CardNumber" id="cardBox" required pattern="^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35\d{3})\d{11})$">
 
                 <label for="monthList">Expiration Date</label>
                 <select name="cardMonth" id="monthList" required>
@@ -187,8 +187,10 @@
                     <option value="2020">2020</option>
                     <option value="2021">2021</option>
                 </select>
-
+                <label for="cscBox">CSC</label>
+                <input type="text" name="CSC" id="cscBox" required pattern="^\d{3}$" placeholder="nnn" maxlength="3">
             </fieldset>
+            <button type="submit"><img src="sb_button.png" alt="next"></button>
         </form>
         <aside>
             <h1>Menu Ideas</h1>
